@@ -8,10 +8,10 @@
 
 ## Installation
 
-`storybook-addon-aria-live` should be included in development dependencies.
+`storybook-addon-aria-live` should be included in development dependencies. `aria-live-capture` is required as a peer dependency.
 
 ```bash
-yarn add --dev storybook-addon-aria-live
+yarn add --dev storybook-addon-aria-live aria-live-capture
 ```
 
 In your `.storybook/main.js`:
