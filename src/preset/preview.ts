@@ -8,6 +8,6 @@
  *
  * https://storybook.js.org/docs/react/writing-stories/decorators#gatsby-focus-wrapper
  */
-import { withCaptures } from "../withCaptures";
+import { withCaptures } from '../withCaptures';
 
 export const decorators = [withCaptures];
