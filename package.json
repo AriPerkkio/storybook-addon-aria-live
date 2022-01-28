@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-aria-live",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Inspect announcements of ARIA live regions",
   "keywords": [
     "storybook-addons",
