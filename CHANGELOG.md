@@ -1,3 +1,15 @@
+# v0.0.3 (Fri Jan 28 2022)
+
+#### ⚠️ Pushed to `main`
+
+- feat: style announcement logs ([@AriPerkkio](https://github.com/AriPerkkio))
+
+#### Authors: 1
+
+- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
+
+---
+
 # v0.0.2 (Fri Jan 28 2022)
 
 #### ⚠️ Pushed to `main`
