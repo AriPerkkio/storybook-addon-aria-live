@@ -1,36 +1,38 @@
 import React from "react";
 import { useAddonState, useChannel } from "@storybook/api";
 import { AddonPanel } from "@storybook/components";
-import { ADDON_ID, EVENTS } from "./constants";
-import { PanelContent } from "./components/PanelContent";
+import { STORY_CHANGED } from "@storybook/core-events";
+import type { PolitenessSetting } from "aria-live-capture";
 
-interface PanelProps {
-  active: boolean;
+import { ADDON_ID, EVENTS } from "./constants";
+
+interface Announcement {
+  textContent: string;
+  politenessSetting: PolitenessSetting;
 }
 
-export const Panel: React.FC<PanelProps> = (props) => {
-  // https://storybook.js.org/docs/react/addons/addons-api#useaddonstate
-  const [results, setState] = useAddonState(ADDON_ID, {
-    danger: [],
-    warning: [],
-  });
+export const Panel: React.FC<{ active: boolean }> = (props) => {
+  const [captures, setCaptures] = useAddonState<Announcement[]>(ADDON_ID, []);
 
-  // https://storybook.js.org/docs/react/addons/addons-api#usechannel
-  const emit = useChannel({
-    [EVENTS.RESULT]: (newResults) => setState(newResults),
+  useChannel({
+    [EVENTS.CAPTURE]: (announcement: Announcement) => {
+      setCaptures((previous) => [...previous, announcement]);
+    },
+    [STORY_CHANGED]: () => {
+      // Reset captures after a story changes
+      setCaptures([]);
+    },
   });
 
   return (
     <AddonPanel {...props}>
-      <PanelContent
-        results={results}
-        fetchData={() => {
-          emit(EVENTS.REQUEST);
-        }}
-        clearData={() => {
-          emit(EVENTS.CLEAR);
-        }}
-      />
+      <ol>
+        {captures.map((capture, index) => (
+          <li key={index}>
+            [{capture.politenessSetting.toUpperCase()}] {capture.textContent}
+          </li>
+        ))}
+      </ol>
     </AddonPanel>
   );
 };
