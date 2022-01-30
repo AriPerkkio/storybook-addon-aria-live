@@ -6,6 +6,8 @@
 
 `storybook-addon-aria-live` is a Storybook addon for inspecting ARIA live region announcements. Internally it is utilizing [`aria-live-capture`](https://www.npmjs.com/package/aria-live-capture) for announcement detection.
 
+[Test online](https://ariperkkio.github.io/storybook-addon-aria-live/)
+
 ## Installation
 
 `storybook-addon-aria-live` should be included in development dependencies. `aria-live-capture` is required as a peer dependency.
