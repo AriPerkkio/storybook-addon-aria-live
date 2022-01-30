@@ -2,7 +2,7 @@ import React from 'react';
 import { useAddonState, useChannel } from '@storybook/api';
 import { AddonPanel } from '@storybook/components';
 import { STORY_CHANGED } from '@storybook/core-events';
-import { styled, themes, convert } from '@storybook/theming';
+import { styled } from '@storybook/theming';
 import type { PolitenessSetting } from 'aria-live-capture';
 
 import { ADDON_ID, EVENTS } from './constants';
