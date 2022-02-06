@@ -39,6 +39,9 @@
     "publish-storybook": "gh-pages -d docs",
     "release": "yarn build && auto shipit"
   },
+  "dependencies": {
+    "aria-live-capture": "^0.4.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
@@ -47,7 +50,6 @@
     "@babel/preset-typescript": "^7.13.0",
     "@storybook/addon-essentials": "^6.4.0",
     "@storybook/react": "^6.4.0",
-    "aria-live-capture": "^0.4.1",
     "auto": "^10.3.0",
     "babel-loader": "^8.1.0",
     "concurrently": "^6.2.0",
@@ -65,7 +67,6 @@
     "@storybook/components": "^6.4.0",
     "@storybook/core-events": "^6.4.0",
     "@storybook/theming": "^6.4.0",
-    "aria-live-capture": ">=0.4",
     "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^16.8.0 || ^17.0.0"
   },
