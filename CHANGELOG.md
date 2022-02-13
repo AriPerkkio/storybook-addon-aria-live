@@ -1,3 +1,15 @@
+# v0.0.5 (Sun Feb 13 2022)
+
+#### 🐛 Bug Fix
+
+- feat: shadow-dom support [#2](https://github.com/AriPerkkio/storybook-addon-aria-live/pull/2) ([@AriPerkkio](https://github.com/AriPerkkio))
+
+#### Authors: 1
+
+- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
+
+---
+
 # v0.0.4 (Sun Feb 06 2022)
 
 #### ⚠️ Pushed to `main`
