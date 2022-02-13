@@ -3310,10 +3310,10 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-aria-live-capture@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/aria-live-capture/-/aria-live-capture-0.4.1.tgz#d98ebabe40a8d3b43099e31f22ad0b2f51f02ec0"
-  integrity sha512-wh1xXMlmZ/wRwNlGT1xiMnRZ0RBH0K4ZYmUKpKbPFOqr0fB+qhPD9/KhaAr7l96bM5wMnb9ZAQDiOrwGa8CTPQ==
+aria-live-capture@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/aria-live-capture/-/aria-live-capture-0.5.1.tgz#4db0e084e3b023a2f81119ebd35b3b9f66c3b0bf"
+  integrity sha512-jn+kdECH+Yxu/Hy0uu1myvc7TTw/kT1kByn5qsDeEUdcEDzaEQfz1C3CR1FGeh8jZsY+5eoNpTUVAXokbR5bMA==
 
 arr-diff@^4.0.0:
   version "4.0.0"
