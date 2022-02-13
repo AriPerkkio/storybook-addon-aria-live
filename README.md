@@ -24,6 +24,19 @@ module.exports = {
 };
 ```
 
+Use [Storybook parameters](https://storybook.js.org/docs/react/writing-stories/parameters) to set global or story specific options:
+
+In your `.storybook/preview.js`:
+
+```js
+export const parameters = {
+  'aria-live': {
+    /** Indicates whether live regions inside `ShadowRoot`s should be tracked. Defaults to false. */
+    includeShadowDom: true,
+  },
+};
+```
+
 ## Development
 
 Project setup is based on [`storybookjs/addon-kit`](https://github.com/storybookjs/addon-kit). See its README for instructions about tooling.
