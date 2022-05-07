@@ -1,3 +1,15 @@
+# v0.0.6 (Sat May 07 2022)
+
+#### 🐛 Bug Fix
+
+- fix: import hooks from storybook-addons directly [#4](https://github.com/AriPerkkio/storybook-addon-aria-live/pull/4) ([@AriPerkkio](https://github.com/AriPerkkio))
+
+#### Authors: 1
+
+- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
+
+---
+
 # v0.0.5 (Sun Feb 13 2022)
 
 #### 🐛 Bug Fix
