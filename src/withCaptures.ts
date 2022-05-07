@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
 import {
   StoryFn as StoryFunction,
+  useEffect,
   useChannel,
   useParameter,
 } from '@storybook/addons';
