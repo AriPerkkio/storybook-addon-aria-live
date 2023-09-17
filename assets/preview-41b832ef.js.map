@@ -1,0 +1,1 @@
+{"version":3,"file":"preview-41b832ef.js","sources":["../../.storybook/preview.ts"],"sourcesContent":["import type { Preview } from '@storybook/react';\n\nconst preview: Preview = {\n  parameters: { 'aria-live': { includeShadowDom: true } },\n};\n\nexport default preview;\n"],"names":["preview"],"mappings":"AAEA,MAAMA,EAAmB,CACvB,WAAY,CAAE,YAAa,CAAE,iBAAkB,GAAO,CACxD"}
