@@ -1,31 +1,56 @@
-name: Release
+name: Publish
 
-on: [push]
+on:
+    workflow_dispatch:
+        inputs:
+            release-type:
+                type: choice
+                description: Type of the release
+                options:
+                    - patch
+                    - minor
+                    - major
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
-    steps:
-      - uses: actions/checkout@v2
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
 
-      - name: Prepare repository
-        run: git fetch --unshallow --tags
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: '18'
+                  registry-url: 'https://registry.npmjs.org'
 
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
+            - name: Install pnpm
+              uses: pnpm/action-setup@v2
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+            - name: Install
+              run: pnpm install
 
-      - name: Install dependencies
-        run: pnpm install
+            - name: Build
+              run: pnpm build
 
-      - name: Create Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          pnpm run release
+            - name: Configure github-actions git
+              run: |
+                  git config --global user.name 'github-actions'
+                  git config --global user.email 'github-actions@users.noreply.github.com'
+
+            - name: Bump version
+              run: npm version ${{ github.event.inputs.release-type }}
+
+            - name: Generate changelog
+              run: |
+                  pnpm changelog
+                  git add CHANGELOG.md
+                  git commit -m 'chore: changelog'
+
+            - name: Push release tag
+              run: git push origin main --follow-tags
+
+            - name: Publish to npm
+              run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
