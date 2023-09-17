@@ -1,70 +1,53 @@
-# v0.0.6 (Sat May 07 2022)
+# [0.1.0](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.6...v0.1.0) (2023-09-17)
 
-#### 🐛 Bug Fix
 
-- fix: import hooks from storybook-addons directly [#4](https://github.com/AriPerkkio/storybook-addon-aria-live/pull/4) ([@AriPerkkio](https://github.com/AriPerkkio))
 
-#### Authors: 1
+## [0.0.6](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.5...v0.0.6) (2022-05-07)
 
-- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
 
----
+### Bug Fixes
 
-# v0.0.5 (Sun Feb 13 2022)
+* import hooks from storybook-addons directly ([#4](https://github.com/AriPerkkio/storybook-addon-aria-live/issues/4)) ([aa3da44](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/aa3da4472143e382865c691d5bec844ec8f4ff02))
 
-#### 🐛 Bug Fix
 
-- feat: shadow-dom support [#2](https://github.com/AriPerkkio/storybook-addon-aria-live/pull/2) ([@AriPerkkio](https://github.com/AriPerkkio))
 
-#### Authors: 1
+## [0.0.5](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.4...v0.0.5) (2022-02-13)
 
-- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
 
----
+### Features
 
-# v0.0.4 (Sun Feb 06 2022)
+* shadow-dom support ([#2](https://github.com/AriPerkkio/storybook-addon-aria-live/issues/2)) ([6f25257](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/6f252571d347863a149191442c7266bf7b5a4d0e))
 
-#### ⚠️ Pushed to `main`
 
-- feat: `aria-live-capture` as direct dependency ([@AriPerkkio](https://github.com/AriPerkkio))
 
-#### Authors: 1
+## [0.0.4](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.3...v0.0.4) (2022-02-06)
 
-- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
 
----
+### Features
 
-# v0.0.3 (Fri Jan 28 2022)
+* `aria-live-capture` as direct dependency ([d8ea897](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/d8ea8976a1e82a7704e9c101cb7a4ab2aeeff134))
 
-#### ⚠️ Pushed to `main`
 
-- feat: style announcement logs ([@AriPerkkio](https://github.com/AriPerkkio))
 
-#### Authors: 1
+## [0.0.3](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.2...v0.0.3) (2022-01-28)
 
-- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
 
----
+### Features
 
-# v0.0.2 (Fri Jan 28 2022)
+* style announcement logs ([4195ba7](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/4195ba79a30e246911a941cd330ac82967c04ffa))
 
-#### ⚠️ Pushed to `main`
 
-- docs: update instructions ([@AriPerkkio](https://github.com/AriPerkkio))
 
-#### Authors: 1
+## [0.0.2](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.1...v0.0.2) (2022-01-28)
 
-- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
 
----
 
-# v0.0.1 (Fri Jan 28 2022)
+## [0.0.1](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/c921f4861829138a37a040816088aab2674c1a07...v0.0.1) (2022-01-28)
 
-#### ⚠️ Pushed to `main`
 
-- feat: `storybook-addon-aria-live` ([@AriPerkkio](https://github.com/AriPerkkio))
-- Initial commit ([@AriPerkkio](https://github.com/AriPerkkio))
+### Features
 
-#### Authors: 1
+* `storybook-addon-aria-live` ([c921f48](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/c921f4861829138a37a040816088aab2674c1a07))
 
-- Ari Perkkiö ([@AriPerkkio](https://github.com/AriPerkkio))
+
+
