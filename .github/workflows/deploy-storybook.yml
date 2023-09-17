@@ -16,15 +16,18 @@ jobs:
         with:
           node-version: 16
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
       - name: Install & Build
         run: |
-          yarn install
-          yarn build
-          yarn build-storybook
+          pnpm install
+          pnpm build
+          pnpm build-storybook
 
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          yarn publish-storybook -u "github-actions-bot <support+actions@github.com>"
+          pnpm run publish-storybook -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
