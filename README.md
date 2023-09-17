@@ -13,22 +13,22 @@
 `storybook-addon-aria-live` should be included in development dependencies.
 
 ```bash
-yarn add --dev storybook-addon-aria-live
+npm install --dev storybook-addon-aria-live
 ```
 
-In your `.storybook/main.js`:
+In your `.storybook/main.ts`:
 
-```js
-module.exports = {
-  addons: ['storybook-addon-aria-live'],
-};
+```ts
+const config: StorybookConfig = {
+  addons: ['storybook-addon-aria-live']
+}
 ```
 
 Use [Storybook parameters](https://storybook.js.org/docs/react/writing-stories/parameters) to set global or story specific options:
 
-In your `.storybook/preview.js`:
+In your `.storybook/preview.ts`:
 
-```js
+```ts
 export const parameters = {
   'aria-live': {
     /** Indicates whether live regions inside `ShadowRoot`s should be tracked. Defaults to false. */

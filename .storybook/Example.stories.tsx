@@ -34,7 +34,7 @@ export function Both() {
 }
 
 export function ShadowDOM() {
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement>(null);
   const [isVisible, toggleVisible] = useReducer((s) => !s, false);
 
   const element = useMemo(() => {
@@ -45,16 +45,16 @@ export function ShadowDOM() {
 
   function toggle() {
     if (isVisible) {
-      ref.current.shadowRoot.removeChild(element);
+      ref.current!.shadowRoot!.removeChild(element);
     } else {
-      ref.current.shadowRoot.appendChild(element);
+      ref.current!.shadowRoot!.appendChild(element);
     }
 
     toggleVisible();
   }
 
   useLayoutEffect(() => {
-    ref.current.attachShadow({ mode: 'open' });
+    ref.current!.attachShadow({ mode: 'open' });
   }, []);
 
   return (
@@ -65,7 +65,11 @@ export function ShadowDOM() {
   );
 }
 
-function Toggle({ children }) {
+function Toggle({
+  children,
+}: {
+  children: (isVisible: boolean) => React.ReactNode;
+}) {
   const [isVisible, toggle] = useReducer((s) => !s, false);
 
   return (
