@@ -1,4 +1,10 @@
-import React, { useLayoutEffect, useMemo, useReducer, useRef } from 'react';
+import React, {
+  useLayoutEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState,
+} from 'react';
 
 export default {
   title: 'Example',
@@ -61,6 +67,32 @@ export function ShadowDOM() {
     <>
       <button onClick={toggle}>Toggle</button>
       <div aria-live="polite" ref={ref}></div>
+    </>
+  );
+}
+
+export function Intervals() {
+  const [isVisible, toggleVisible] = useReducer((s) => !s, false);
+  const [interval, setIntervalState] = useState<ReturnType<
+    typeof setInterval
+  > | null>();
+
+  function onClick() {
+    if (interval != null) {
+      clearInterval(interval);
+      setIntervalState(null);
+      return;
+    }
+
+    setIntervalState(setInterval(toggleVisible, 500));
+  }
+
+  return (
+    <>
+      <button onClick={onClick}>{interval == null ? 'Start' : 'Stop'}</button>
+
+      <div role="status">{isVisible && 'Notification'}</div>
+      <div role="alert">{isVisible && 'Alert'}</div>
     </>
   );
 }
