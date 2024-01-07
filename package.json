@@ -64,6 +64,7 @@
     "@storybook/react-vite": "^7.4.0",
     "@storybook/theming": "^7.4.2",
     "@storybook/types": "^7.4.2",
+    "@types/node": "^20.10.6",
     "@types/react": "^18.2.21",
     "@vitejs/plugin-react": "^4.0.4",
     "boxen": "^5.0.1",
