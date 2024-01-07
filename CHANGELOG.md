@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.1.0...v0.1.1) (2024-01-07)
+
+
+### Features
+
+* scroll to last announcement, add clear button ([f9a6e86](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/f9a6e8667179186ee923ffb64d7d20967009b164))
+
+
+
 # [0.1.0](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.0.6...v0.1.0) (2023-09-17)
 
 
