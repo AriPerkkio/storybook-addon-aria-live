@@ -1,4 +1,4 @@
-import { useEffect, useChannel, useParameter } from '@storybook/addons';
+import { useEffect, useChannel, useParameter } from '@storybook/preview-api';
 import { PartialStoryFn as StoryFunction } from '@storybook/types';
 
 import { EVENTS } from './constants';

@@ -13,6 +13,7 @@ export default defineConfig((options) => ({
   sourcemap: true,
   clean: true,
   platform: 'browser',
+  external: ['react', 'react-dom'],
   esbuildOptions(options) {
     options.conditions = ['module'];
   },
