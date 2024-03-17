@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.1.1...v1.0.0) (2024-03-17)
+
+
+### Features
+
+* Storybook 8 support ([#9](https://github.com/AriPerkkio/storybook-addon-aria-live/issues/9)) ([eb47403](https://github.com/AriPerkkio/storybook-addon-aria-live/commit/eb4740372b927a8ad986d99b7ca72335eff38412))
+
+
+
 ## [0.1.1](https://github.com/AriPerkkio/storybook-addon-aria-live/compare/v0.1.0...v0.1.1) (2024-01-07)
 
 
