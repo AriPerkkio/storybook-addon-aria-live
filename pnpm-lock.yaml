@@ -12,8 +12,8 @@ dependencies:
     specifier: ^8
     version: 8.0.0
   aria-live-capture:
-    specifier: ^1.0.0
-    version: 1.0.1
+    specifier: ^2.0.0
+    version: 2.0.0
 
 devDependencies:
   '@storybook/addon-essentials':
@@ -3104,8 +3104,8 @@ packages:
     resolution: {integrity: sha512-jlpIfsOoNoafl92Sz//64uQHGSyMrD2vYG5d8o2a4qGvyNCvXur7bzIsWtAC/6flI2RYAp3kv8rsfBtaLm7w0g==}
     dev: true
 
-  /aria-live-capture@1.0.1:
-    resolution: {integrity: sha512-xLYuJ7oEs39bX4yVu4zJGzNhxZAXQlQ7wpiJjnP8bsPtuD8/am67y5nxrs7AIkF0Q1OzMFQ/oi8uQNG76/7aPg==}
+  /aria-live-capture@2.0.0:
+    resolution: {integrity: sha512-h2c193NGHIvPJqbVJwrX+Yyn2ir6z2CLokfrqczSReVgEl89PtwYqT0DA3Sw6+Anb6Awq7Mv9o1uTbiipkvh3w==}
     dev: false
 
   /array-buffer-byte-length@1.0.1:

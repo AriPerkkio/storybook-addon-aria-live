@@ -54,7 +54,7 @@
     "publish-storybook": "touch docs/.nojekyll && gh-pages --dist docs --dotfiles true"
   },
   "dependencies": {
-    "aria-live-capture": "^1.0.0"
+    "aria-live-capture": "^2.0.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.0.0",
